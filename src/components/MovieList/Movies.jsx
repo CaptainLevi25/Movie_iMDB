@@ -14,7 +14,7 @@ export default function Movies() {
       setisLoading(false);
       setError(null);
       const response = await axios.get(
-        `http://www.omdbapi.com/?apikey=e4fc4dee&s=${e.target.value}`
+        `https://www.omdbapi.com/?apikey=e4fc4dee&s=${e.target.value}`
       );
 
       console.log(response.data);
