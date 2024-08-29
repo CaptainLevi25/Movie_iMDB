@@ -12,7 +12,7 @@ export default function Movie() {
     
     try{
       setisLoading(true);
-      const response = await axios.get(`http://www.omdbapi.com/?apikey=e4fc4dee&i=${currentMovie}`)
+      const response = await axios.get(`https://www.omdbapi.com/?apikey=e4fc4dee&i=${currentMovie}`)
       console.log(response.data);
       setExtrainfo(response.data);
     }catch(e){
