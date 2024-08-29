@@ -8,7 +8,7 @@ export default function Movies() {
   const [isLoading, setisLoading] = useState(false);
   const { currentMovie, setCurrentMovie } = useMovie();
   const [movieList, setMovieList] = useState(null);
-  const [error, setError] = useState("Please a query to retrieve relevant result");
+  const [error, setError] = useState("Please type a query to retrieve relevant result");
   const handleChange = async (e) => {
     try {
       setisLoading(false);
