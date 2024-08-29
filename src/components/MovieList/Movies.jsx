@@ -20,7 +20,7 @@ export default function Movies() {
       console.log(response.data);
       if (response.data.Response === "False") {
         if (response.data.Error === "Incorrect IMDb ID.")
-          setError("Please a query to retrieve relevant result");
+          setError("Please type a query to retrieve relevant result");
         else setError(response.data.Error);
       }
       setMovieList(response.data.Search);
